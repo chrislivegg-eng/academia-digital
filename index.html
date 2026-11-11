@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#100d19">
+  <meta name="description" content="Tu academia personal: ocho materias, Java, HTML y CSS con ejercicios y progreso local.">
+  <title>Academia Digital · Santuario del conocimiento</title>
+  <link rel="icon" href="assets/gengar.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <aside class="sidebar" aria-label="Academia">
+    <a class="brand" href="#inicio"><img src="assets/gengar.svg" alt="" width="40" height="40"><span>ACADEMIA<small>DIGITAL</small></span><span class="brand-dot"></span></a>
+    <p class="nav-label">TU SANTUARIO</p>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#inicio" data-nav="inicio"><span aria-hidden="true">⌂</span>Mi academia</a>
+      <a href="#materias" data-nav="materias"><span aria-hidden="true">▤</span>Mis materias<span class="nav-count">8</span></a>
+      <a href="#laboratorio" data-nav="laboratorio"><span aria-hidden="true">&lt;/&gt;</span>Laboratorio web</a>
+      <a href="#progreso" data-nav="progreso"><span aria-hidden="true">◇</span>Mi progreso</a>
+    </nav>
+    <div class="sidebar-bottom"><div class="companion-mini"><img src="assets/gengar.svg" alt="Gengar" width="64" height="64"><p>Un pequeño paso.<br><strong>Una habilidad nueva.</strong></p></div><span class="local-label"><i></i> Avance en este navegador</span></div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><div><span class="breadcrumb">TU ESPACIO DE APRENDIZAJE</span><span class="top-date">Estudia a tu ritmo</span></div><div class="player"><span id="header-xp">0 XP</span><span class="level-badge" id="header-level">NIVEL 1</span><img src="assets/gengar.svg" alt="" width="36" height="36"></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer>ACADEMIA DIGITAL <span>Aprender · Practicar · Crear</span><a href="#fuentes">Materiales y fuentes</a></footer>
+  </div>
+  <button id="mentor-toggle" class="mentor-toggle" aria-expanded="false" aria-controls="mentor-panel"><img src="assets/gengar.svg" alt="" width="44" height="44"><span>Una pista</span></button>
+  <aside id="mentor-panel" class="mentor-panel" aria-label="Ayuda de Gengar" hidden><div class="mentor-heading"><strong>Gengar te acompaña</strong><button id="mentor-close" aria-label="Cerrar ayuda">×</button></div><p id="mentor-message">Elige una materia y resuelve un reto. Equivocarse también cuenta como practicar.</p><div class="mentor-actions"><button data-help="explain">Explícamelo fácil</button><button data-help="hint">Dame una pista</button><button data-help="next">¿Qué sigue?</button></div><small>Guía local con explicaciones preparadas. No es un chat con IA.</small></aside>
+  <p id="toast" class="toast" role="status" aria-live="polite" hidden></p>
+  <dialog id="confirmation" aria-labelledby="confirmation-title"><form method="dialog"><h2 id="confirmation-title">Confirma el cambio</h2><p></p><div class="confirmation-actions"><button value="cancel" autofocus>Cancelar</button><button value="accept" class="primary">Continuar</button></div></form></dialog>
+  <script src="data.js"></script><script src="app.js"></script>
+</body>
+</html>
